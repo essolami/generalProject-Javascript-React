@@ -1,0 +1,6 @@
+1 - What inspired you to become a JavaScript developer?
+
+"I have always been interested in technology and how it can be used to solve complex problems. I discovered JavaScript while I was in college and I was immediately drawn to its versatility and ability to create dynamic, interactive websites. I was fascinated by the idea that I could bring my designs and ideas to life with code. I started exploring it more and soon realized that JavaScript was not just limited to front-end development, but it can also be used for back-end development, which made it even more appealing to me. I began working on personal projects and collaborating with other developers, and I fell in love with the constant challenge and the opportunity to continuously learn and grow as a developer. That's why I became a JavaScript developer."
+
+
+2 - 

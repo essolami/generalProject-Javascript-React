@@ -2,6 +2,8 @@
 
 ## "I have always been interested in technology and how it can be used to solve complex problems. I discovered JavaScript while I was in college and I was immediately drawn to its versatility and ability to create dynamic, interactive websites. I was fascinated by the idea that I could bring my designs and ideas to life with code. I started exploring it more and soon realized that JavaScript was not just limited to front-end development, but it can also be used for back-end development, which made it even more appealing to me. I began working on personal projects and collaborating with other developers, and I fell in love with the constant challenge and the opportunity to continuously learn and grow as a developer. That's why I became a JavaScript developer."
 
+![alt text](http://url/to/img.png)
+
 ---
 
 [ ⚡️ Difference between Var Let Const? ]()
@@ -111,6 +113,16 @@
 ## In other terms, currying is when a function — instead of taking all arguments at one time — takes the first one and returns a new function, which takes the second one and returns a new function, which takes the third one, etc. until all arguments are completed. f(a,b,c) => f(a)(b)(c)
 
 ---
+
+[ ⚡️ the purpose of the "apply" and "call" methods in JavaScript? ]()
+
+## allow you to invoke a function and set the value of "this" within that function. These methods are part of the Function prototype and are available on all functions in JavaScript.
+
+## ---- call() method allows an object to use function of another object.
+
+## ---- apply () method is similar to the call() method. call() method takes arguments separately whereas, apply() method takes arguments as an array.
+
+## ---- bind() methode create a copy of function
 
 [ ⚡️ async/await in JavaScript? ]()
 

@@ -1,12 +1,23 @@
 [ ⚡️ What inspired you to become a JavaScript developer? ]()
 
-## "I have always been interested in technology and how it can be used to solve complex problems. I discovered JavaScript while I was in college and I was immediately drawn to its versatility and ability to create dynamic, interactive websites. I was fascinated by the idea that I could bring my designs and ideas to life with code. I started exploring it more and soon realized that JavaScript was not just limited to front-end development, but it can also be used for back-end development, which made it even more appealing to me. I began working on personal projects and collaborating with other developers, and I fell in love with the constant challenge and the opportunity to continuously learn and grow as a developer. That's why I became a JavaScript developer."
+## "I have always been interested in technology and how it can be used to solve complex problems. I discovered JavaScript while I was in college and I was immediately drawn to its versatility and ability to create dynamic, interactive websites. I was fascinated by the idea that I could bring my designs and ideas to life with code. I started exploring it more, and soon realized that JavaScript was not just limited to front-end development, but it can also be used for back-end development, which made it even more appealing to me. I began working on personal projects and collaborating with other developers, and I fell in love with the constant challenge and the opportunity to continuously learn and grow as a developer. That's why I became a JavaScript developer."
 
-![alt text](http://url/to/img.png)
+drawn to its versatility = ينجذب إلى تعدد استخداماته
+fascinated = منبهر
+more appealing to me = أكثر جاذبية بالنسبة لي
+the constant challenge = التحدي المستمر
 
 ---
 
 [ ⚡️ Difference between Var Let Const? ]()
+
+The main difference between var, let, and const is their scope. var is function scoped, meaning that a variable declared with var is accessible within the entire function in which it was declared, even outside of the block in which it was defined. In contrast, let and const are block scoped, meaning that a variable declared with let or const is only accessible within the block in which it was defined, and not outside of that block.
+
+Another difference is the way they handle re-declarations. var allows you to re-declare a variable without any issues, but let and const will [(throw)] an error if you try to re-declare a variable with the same name.
+
+Additionally, if you try to access a variable declared with var before it is declared, you will get undefined in the console, whereas trying to access a variable declared with let or const before it is declared will result in a ReferenceError.
+
+Overall, let and const are considered to be more logical and safer ways to declare variables, as they provide stricter rules and prevent accidental re-declarations or access to uninitialized variables.
 
 ## var
 
@@ -28,6 +39,12 @@
     - Cannot be redeclared
     - When you call variable before declare it let will return error which is more logical
     - It doesn't generates property with the name of the variable inside the window object and it will return undefined
+
+const constVariable = "I am a constant";
+let letVariable = "I am a let variable";
+
+console.log(window.constVariable); // Output: undefined
+console.log(window.letVariable); // Output: undefined Because they are only accessible within the block they are declared in. Unlike var which is consider as a global scope
 
 ---
 

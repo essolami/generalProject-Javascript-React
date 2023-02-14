@@ -5,6 +5,7 @@ import Exercice2 from './javaScript/exercice2.js';
 import Exercice3 from './javaScript/exercice3.js';
 import Exercice4 from './javaScript/exercice4.js';
 import { Exercice5 } from './javaScript/exercice5.js';
+import CustomHooks from './react/customHooks';
 import ErrorBoundary from './react/errorBoundary/errorBoundary';
 // import ExerciceReact1 from './react';
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
       {/* <Exercice4 /> */}
       {/* {Exercice5()} */}
       {/* <ExerciceReact1 /> */}
+      <CustomHooks />
     </div>
   );
 }

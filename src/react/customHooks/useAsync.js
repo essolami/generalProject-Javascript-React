@@ -12,14 +12,12 @@ const asyncReducer = (state, action) => {
       return { status: PENDING, data: null, error: null, loading: true };
     }
     case RESOLVED: {
-      console.log(action);
       return {
         status: RESOLVED,
         data: action.data,
         error: null,
         loading: false,
       };
-      console.log('loliiii')
     }
     case REJECTED: {
       return {

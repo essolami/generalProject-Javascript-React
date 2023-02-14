@@ -6,7 +6,7 @@ const CustomHooks = (props) => {
   const { data, error, status, loading, run } = useAsync();
 
   const handleClick = () => {
-    const promise = fetch('https://jsonplaceholder.typicode.com/posts/1');
+    const promise = fetch('https://jsonplaceholder.typicode.com/todos/1');
     run(promise);
   };
   return (
@@ -17,7 +17,7 @@ const CustomHooks = (props) => {
         {error && <p>Error: {error}</p>}
         {data && (
           <>
-            {/* {console.log(data)} */}
+            {data.json().then((data) => console.log(data))}
             <p>Data:</p>
           </>
         )}

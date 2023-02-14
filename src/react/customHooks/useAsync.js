@@ -15,6 +15,7 @@ const useAsync = (url) => {
       .then((res) => res.json())
       .then((data) => {
         dispatch({ type: RESOLVED, data });
+        console.log(data);
       })
       .catch((error) => {
         let message = error?.response?.data || 'something failed';

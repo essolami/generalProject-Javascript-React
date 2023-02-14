@@ -6,21 +6,18 @@ const CustomHooks = (props) => {
   const { data, error, status, loading, run } = useAsync();
 
   const handleClick = () => {
-    const promise = fetch('https://jsonplaceholder.typicode.com/todos/1');
+    const promise = fetch('https://jsonplaceholder.typicode.com/todos');
     run(promise);
   };
+  React.useEffect(() => {}, [data]);
   return (
     <div>
       {/* {counter} */}
       <div>
         {loading && <p>Loading...</p>}
         {error && <p>Error: {error}</p>}
-        {data && (
-          <>
-            {data.json().then((data) => console.log(data))}
-            <p>Data:</p>
-          </>
-        )}
+        <p>Data:</p>
+        {data && data?.json().then((element) => console.log(element))}
         <button onClick={handleClick}>Make API Call</button>
       </div>
     </div>

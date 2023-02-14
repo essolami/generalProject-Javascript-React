@@ -6,7 +6,6 @@ const CustomHooks = (props) => {
   const { data, error, status, loading, run } = useAsync();
 
   const handleClick = () => {
-    // make a sample API call
     const promise = fetch('https://jsonplaceholder.typicode.com/posts/1');
     run(promise);
   };
@@ -16,11 +15,11 @@ const CustomHooks = (props) => {
       <div>
         {loading && <p>Loading...</p>}
         {error && <p>Error: {error}</p>}
-        {/* {data && (
+        {data && (
           <>
             <p>Data: {data}</p>
           </>
-        )} */}
+        )}
         <button onClick={handleClick}>Make API Call</button>
       </div>
     </div>

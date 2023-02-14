@@ -12,12 +12,14 @@ const asyncReducer = (state, action) => {
       return { status: PENDING, data: null, error: null, loading: true };
     }
     case RESOLVED: {
+      console.log(action);
       return {
         status: RESOLVED,
         data: action.data,
         error: null,
         loading: false,
       };
+      console.log('loliiii')
     }
     case REJECTED: {
       return {
@@ -47,10 +49,10 @@ const useAsync = (initialState) => {
   const run = React.useCallback(
     (promise) => {
       dispatch({ type: PENDING });
+      console.log('pending');
       promise
         .then((data) => {
           dispatch({ type: RESOLVED, data });
-          consoble.log(data);
         })
         .catch((error) => {
           let message = error?.response?.data || 'something failed';

@@ -1,8 +1,8 @@
 import React from 'react';
-import useCounter from './use-counter';
+// import useCounter from './use-counter';
 import useAsync from './useAsync';
 const CustomHooks = (props) => {
-  const counter = useCounter();
+  // const counter = useCounter();
   const { data, error, status, loading, run } = useAsync();
 
   const handleClick = () => {
@@ -11,13 +11,14 @@ const CustomHooks = (props) => {
   };
   return (
     <div>
-      {counter}
+      {/* {counter} */}
       <div>
         {loading && <p>Loading...</p>}
         {error && <p>Error: {error}</p>}
         {data && (
           <>
-            <p>Data: {data}</p>
+            {/* {console.log(data)} */}
+            <p>Data:</p>
           </>
         )}
         <button onClick={handleClick}>Make API Call</button>

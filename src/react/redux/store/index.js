@@ -6,8 +6,7 @@ const counterReducer = (
   },
   action
 ) => {
-  console.log(action);
-  switch (action) {
+  switch (action.type) {
     case 'Increment':
       return {
         counter: state.counter + 1,

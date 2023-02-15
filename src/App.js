@@ -7,6 +7,7 @@ import Exercice4 from './javaScript/exercice4.js';
 import { Exercice5 } from './javaScript/exercice5.js';
 import CustomHooks from './react/customHooks';
 import ErrorBoundary from './react/errorBoundary/errorBoundary';
+import Counter from './react/redux/components/counter.js';
 // import ExerciceReact1 from './react';
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       {/* {Exercice5()} */}
       {/* <ExerciceReact1 /> */}
       <CustomHooks />
+      <Counter />
     </div>
   );
 }

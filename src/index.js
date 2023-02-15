@@ -1,13 +1,15 @@
-import React, { StrictMode } from 'react';
+import React from 'react';
 import { createRoot } from 'react-dom/client';
-
+import { Provider } from 'react-redux';
 import App from './App';
+import store from './react/redux/store';
 
-const rootElement = document.getElementById('root');
-const root = createRoot(rootElement);
+const root = createRoot(document.getElementById('root'));
 
 root.render(
-  <StrictMode>
+  <Provider store={store}>
     <App />
-  </StrictMode>
+  </Provider>
 );
+
+// we create a provider from react-redux in the top for passing all store data to entire application

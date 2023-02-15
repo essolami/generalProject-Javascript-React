@@ -1,10 +1,3 @@
-import React from 'react';
-
-const DivingIntoRedux = () => {
-  return <h1>Diving Into Redux</h1>;
-};
-export default DivingIntoRedux;
-
 /*
 ----
 

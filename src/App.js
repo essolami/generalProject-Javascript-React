@@ -9,15 +9,8 @@ import './style.css';
 // import ErrorBoundary from './react/errorBoundary/errorBoundary';
 // import ClassCounter from './react/redux/components/class-counter.js';
 import CounterRedux from './react/redux/components/counter.js';
-import { authActions } from './react/redux/store/auth';
 
-import { useSelector, useDispatch } from 'react-redux';
-const isAuth = useSelector((state) => state.auth.isAuthenticated);
 export default function App() {
-  const dispatch = useDispatch();
-  const loginHandler = () => {
-    dispatch(authActions.login());
-  };
   return (
     <div>
       {/* <Exercice1/> */}
@@ -27,11 +20,7 @@ export default function App() {
       {/* {Exercice5()} */}
       {/* <ExerciceReact1 /> */}
       {/* <CustomHooks /> */}
-      {!isAuth ? (
-        <button onClick={loginHandler}>Login</button>
-      ) : (
-        <button>Logout</button>
-      )}
+
       <CounterRedux />
       {/* <ClassCounter /> */}
     </div>

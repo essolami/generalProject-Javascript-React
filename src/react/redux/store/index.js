@@ -69,4 +69,6 @@ because redux it's a library who can work with javascript and has no idea about 
 so for that we need to install react-redux  
 to subscribe the components into store
 ----
+
+Thunk : is a function that delays an action until later, 
 */

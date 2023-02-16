@@ -24,12 +24,21 @@ export const postSlice = createSlice({
   name: 'posts',
   initialState,
   reducers: {
-    addPost: (state) => {
+    addPost: (state, action) => {
       // Redux Toolkit allows us to write "mutating" logic in reducers. It
       // doesn't actually mutate the state because it uses the Immer library,
       // which detects changes to a "draft state" and produces a brand new
       // immutable state based off those changes
-      state.value += 1;
+      return {
+        ...state,
+        posts: [...state.posts, action.payload],
+      };
+    },
+    deletePost: (state, action) => {
+      return {
+        ...state,
+        posts = state.posts.filter((item) => item.id !== action.id)
+      }
     },
   },
 });
@@ -55,6 +64,6 @@ Mutation can be useful in some cases, but it can also lead to unexpected behavio
 */
 
 // Action creators are generated for each case reducer function
-export const { addPost } = postSlice.actions;
+export const postActions = postSlice.actions;
 
 export default postSlice.reducer;

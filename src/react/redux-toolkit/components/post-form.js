@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { postActions } from '../posts-slice.js';
 import './Post.css';
 function PostForm() {
+  const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
 
@@ -19,7 +22,7 @@ function PostForm() {
       title,
       body,
     };
-    props.onAddPost(newPost);
+    dispatch(postActions.addPost(newPost));
     setTitle('');
     setBody('');
   };

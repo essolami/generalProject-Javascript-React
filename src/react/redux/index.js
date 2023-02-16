@@ -12,7 +12,7 @@ let isInitial = true;
 
 function ReduxDemo() {
   const dispatch = useDispatch();
-  const s-- howCart = useSelector((state) => state.ui.cartIsVisible);
+  const showCart = useSelector((state) => state.ui.cartIsVisible);
   const cart = useSelector((state) => state.cart);
   const notification = useSelector((state) => state.ui.notification);
 

@@ -1,4 +1,3 @@
-
 ---
 
 [ What is Redux and why is it useful? ]()
@@ -73,5 +72,14 @@ Immutability means that data cannot be changed after it is created. This is impo
 
 [ What is the role of dispatch in Redux? ]()
 The dispatch() function is used to send an action to the store, triggering a state change and potentially causing a re-render of the UI.
+
+---
+
+[ mutable && Immutable ]()
+immutable == ثابت
+mutable == متقلب
+"mutable" refers to an object or value that can be modified or changed after it has been created. This means that the original object or value is changed directly, without creating a new copy.
+
+"Immutable", on the other hand, refers to an object or value that cannot be modified once it has been created. Instead, any changes to the object or value result in a new copy being created, leaving the original unchanged.
 
 ---

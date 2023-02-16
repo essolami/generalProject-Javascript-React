@@ -6,7 +6,6 @@ function Post() {
   const { posts } = useSelector((state) => state.post);
   const dispatch = useDispatch();
   const handleDelete = (id) => {
-    console.log('iddd');
     dispatch(postActions.deletePost({ id }));
   };
   return (

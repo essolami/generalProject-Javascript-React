@@ -35,10 +35,11 @@ export const postSlice = createSlice({
       };
     },
     deletePost: (state, action) => {
+      console.log(action);
       return {
         ...state,
-        posts = state.posts.filter((item) => item.id !== action.id)
-      }
+        posts: state.posts.filter((item) => item.id !== action.payload.id),
+      };
     },
   },
 });

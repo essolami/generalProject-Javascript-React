@@ -59,45 +59,45 @@ const cartSlice = createSlice({
         status: 'success',
       };
     },
-    [fetchCartData.rejected]: (state, action) => {
-      return {
-        ...state,
-        isLoading: false,
-        status: 'rejected',
-      };
-    },
-    [addItemToCart.pending]: (state) => {
-      return {
-        ...state,
-        isLoading: true,
-        status: 'SEND_CART_DATA_PENDING',
-      };
-    },
-    [addItemToCart.fulfilled]: (state, action) => {
-      const newItem = action.payload;
-      const existingItem = state.items.find((item) => item.id === newItem.id);
-      state.totalQuantity++;
-      state.changed = true;
-      if (!existingItem) {
-        state.items.push({
-          id: newItem.id,
-          price: newItem.price,
-          quantity: 1,
-          totalPrice: newItem.price,
-          name: newItem.title,
-        });
-      } else {
-        existingItem.quantity++;
-        existingItem.totalPrice = existingItem.totalPrice + newItem.price;
-      }
-    },
-    [addItemToCart.rejected]: (state, action) => {
-      return {
-        ...state,
-        isLoading: false,
-        status: 'rejected',
-      };
-    },
+    // [fetchCartData.rejected]: (state, action) => {
+    //   return {
+    //     ...state,
+    //     isLoading: false,
+    //     status: 'rejected',
+    //   };
+    // },
+    // [addItemToCart.pending]: (state) => {
+    //   return {
+    //     ...state,
+    //     isLoading: true,
+    //     status: 'SEND_CART_DATA_PENDING',
+    //   };
+    // },
+    // [addItemToCart.fulfilled]: (state, action) => {
+    //   const newItem = action.payload;
+    //   const existingItem = state.items.find((item) => item.id === newItem.id);
+    //   state.totalQuantity++;
+    //   state.changed = true;
+    //   if (!existingItem) {
+    //     state.items.push({
+    //       id: newItem.id,
+    //       price: newItem.price,
+    //       quantity: 1,
+    //       totalPrice: newItem.price,
+    //       name: newItem.title,
+    //     });
+    //   } else {
+    //     existingItem.quantity++;
+    //     existingItem.totalPrice = existingItem.totalPrice + newItem.price;
+    //   }
+    // },
+    // [addItemToCart.rejected]: (state, action) => {
+    //   return {
+    //     ...state,
+    //     isLoading: false,
+    //     status: 'rejected',
+    //   };
+    // },
   },
 });
 

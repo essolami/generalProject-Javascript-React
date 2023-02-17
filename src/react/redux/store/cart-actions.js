@@ -20,7 +20,7 @@ export const fetchCartData = createAsyncThunk(
   }
 );
 
-export const sendCartData = createAsyncThunk(
+export const addItemToCart = createAsyncThunk(
   'users/fetchUser',
   async (_, thunkAPI) => {
     console.log('heeeey');

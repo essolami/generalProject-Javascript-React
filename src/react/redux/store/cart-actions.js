@@ -1,13 +1,14 @@
 import { uiActions } from './ui-slice';
 import { cartActions } from './cart-slice';
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
+// import axios from 'axios';
 
 export const fetchCartData = createAsyncThunk('users/fetchUser', async () => {
-  const response = await axios.get(
+  const response = await fetch(
     'https://javascript-react-guide-default-rtdb.firebaseio.com/cart.json'
   );
-  return response.data;
+  const data = await response.json();
+  return data;
 });
 
 // export const fetchCartData = () => {

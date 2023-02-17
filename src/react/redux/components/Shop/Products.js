@@ -11,9 +11,21 @@ const DUMMY_PRODUCTS = [
   },
   {
     id: 'p2',
-    price: 5,
+    price: 2,
     title: 'My Second Book',
     description: 'The second book I ever wrote',
+  },
+  {
+    id: 'p3',
+    price: 5.7,
+    title: 'My Third Book',
+    description: 'The Third book I ever wrote',
+  },
+  {
+    id: 'p4',
+    price: 15,
+    title: 'My Fourth Book',
+    description: 'The Fourth book I ever wrote',
   },
 ];
 

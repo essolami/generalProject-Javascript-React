@@ -1,41 +1,45 @@
 import { uiActions } from './ui-slice';
 import { cartActions } from './cart-slice';
+import { createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
-export const fetchCartData = () => {
-  return async (dispatch) => {
-    const fetchData = async () => {
-      const response = await fetch(
-        'https://javascript-react-guide-default-rtdb.firebaseio.com/cart.json'
-      );
+export const fetchCartData = createAsyncThunk('users/fetchUser', async () => {
+  const response = await axios.get(
+    'https://javascript-react-guide-default-rtdb.firebaseio.com/cart.json'
+  );
+  return response.data;
+});
 
-      if (!response.ok) {
-        throw new Error('Could not fetch cart data!');
-      }
+// export const fetchCartData = () => {
+//   return async (dispatch) => {
+//     const fetchData = async () => {
+//       const response = await fetch(
+//         'https://javascript-react-guide-default-rtdb.firebaseio.com/cart.json'
+//       );
 
-      const data = await response.json();
+//       if (!response.ok) {
+//         throw new Error('Could not fetch cart data!');
+//       }
 
-      return data;
-    };
+//       const data = await response.json();
 
-    try {
-      const cartData = await fetchData();
-      dispatch(
-        cartActions.replaceCart({
-          items: cartData.items || [],
-          totalQuantity: cartData.totalQuantity,
-        })
-      );
-    } catch (error) {
-      dispatch(
-        uiActions.showNotification({
-          status: 'error',
-          title: 'Error!',
-          message: 'Fetching cart data failed!',
-        })
-      );
-    }
-  };
-};
+//       return data;
+//     };
+
+//     try {
+//       const cartData = await fetchData();
+//       dispatch(cartActions.replaceCart(cartData));
+//     } catch (error) {
+//       dispatch(
+//         uiActions.showNotification({
+//           status: 'error',
+//           title: 'Error!',
+//           message: 'Fetching cart data failed!',
+//         })
+//       );
+//     }
+//   };
+// };
 
 export const sendCartData = (cart) => {
   return async (dispatch) => {

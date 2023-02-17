@@ -6,7 +6,7 @@ import Cart from './components/Cart/Cart';
 import Layout from './components/Layout/Layout';
 import Products from './components/Shop/Products';
 import Notification from './components/UI/Notification';
-import { sendCartData, fetchCartData } from './store/cart-actions';
+import { addItemToCart, fetchCartData } from './store/cart-actions';
 
 let isInitial = true;
 
@@ -27,7 +27,7 @@ function ReduxDemo() {
     }
 
     if (cart.changed) {
-      dispatch(sendCartData(cart));
+      dispatch(addItemToCart(cart));
     }
   }, [cart, dispatch]);
 

@@ -83,3 +83,9 @@ mutable == متقلب
 "Immutable", on the other hand, refers to an object or value that cannot be modified once it has been created. Instead, any changes to the object or value result in a new copy being created, leaving the original unchanged.
 
 ---
+
+[Redux Toolkit]()
+
+- Some of the benefits od redux tooltip is simlify
+  -- the configuration of implementation redux store and reducers by add some feature to redux.
+  -- we have configureStore() and createReducer which leave the concept of rewriting of action type to function as well as the simplification of the immutable updates with normal mutative.

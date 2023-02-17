@@ -17,7 +17,7 @@ function ReduxDemo() {
   const notification = useSelector((state) => state.ui.notification);
 
   useEffect(() => {
-    dispatch(fetchCartData({ isInitial, pop: 'pop', lol: 'elon mask' }));
+    dispatch(fetchCartData());
   }, [dispatch]);
 
   useEffect(() => {

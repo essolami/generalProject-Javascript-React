@@ -2,7 +2,7 @@ import { uiActions } from './ui-slice';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 const url = 'https://javascript-react-guide-default-rtdb.firebaseio.com';
 export const fetchCartData = createAsyncThunk(
-  'users/fetchUser',
+  'users/fetchCartData',
   async (_, thunkAPI) => {
     try {
       const response = await fetch(`${url}/cart.json`);
@@ -21,7 +21,7 @@ export const fetchCartData = createAsyncThunk(
 );
 
 export const addItemToCart = createAsyncThunk(
-  'users/fetchUser',
+  'users/fetchCartData',
   async (_, thunkAPI) => {
     console.log('heeeey');
     try {

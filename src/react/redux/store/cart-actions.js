@@ -1,15 +1,33 @@
 import { uiActions } from './ui-slice';
 import { cartActions } from './cart-slice';
 import { createAsyncThunk } from '@reduxjs/toolkit';
-// import axios from 'axios';
-
-export const fetchCartData = createAsyncThunk('users/fetchUser', async () => {
-  const response = await fetch(
-    'https://javascript-react-guide-default-rtdb.firebaseio.com/cart.json'
-  );
-  const data = await response.json();
-  return data;
-});
+import axios from 'axios';
+const url = 'https://javascript-react-guide-default-rtdb.firebaseio.com';
+export const fetchCartData = createAsyncThunk(
+  'users/fetchUser',
+  async (data, thunkAPI) => {
+    // console.log(data);
+    // console.log(thunkApi);
+    try {
+      // console.log(name);
+      // console.log(thunkAPI);
+      // console.log(thunkAPI.getState());
+      // thunkAPI.dispatch(openModal());
+      const response = await axios.get(`${url}/cart.json`);
+      console.log(response);
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      thunkAPI.dispatch(
+        uiActions.showNotification({
+          status: 'error',
+          title: 'Error!',
+          message: 'Fetching cart data failed!',
+        })
+      );
+    }
+  }
+);
 
 // export const fetchCartData = () => {
 //   return async (dispatch) => {

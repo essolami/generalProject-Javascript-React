@@ -10,13 +10,6 @@ const cartSlice = createSlice({
     changed: false,
   },
   reducers: {
-    replaceCart(state, action) {
-      return {
-        ...state,
-        items: action.payload.items,
-        totalQuantity: action.payload.totalQuantity,
-      };
-    },
     addItemToCart(state, action) {
       const newItem = action.payload;
       const existingItem = state.items.find((item) => item.id === newItem.id);
@@ -48,19 +41,31 @@ const cartSlice = createSlice({
       }
     },
   },
-  extraReducers: (builder) => {
-    builder
-      .addCase(fetchCartData.pending, (state) => {
-        state.isLoading = true;
-      })
-      .addCase(fetchCartData.fulfilled, (state, action) => {
-        state.isLoading = false;
-        state.items = action.payload.items;
-        console.log(state);
-      })
-      .addCase(fetchCartData.rejected, (state) => {
-        state.isLoading = false;
-      });
+  extraReducers: {
+    [fetchCartData.pending]: (state) => {
+      return {
+        ...state,
+        isLoading: true,
+        status: 'pending',
+      };
+    },
+    [fetchCartData.fulfilled]: (state, action) => {
+      const { items, totalQuantity } = action.payload;
+      return {
+        ...state,
+        isLoading: false,
+        items,
+        totalQuantity,
+        status: 'success',
+      };
+    },
+    [fetchCartData.rejected]: (state, action) => {
+      return {
+        ...state,
+        isLoading: false,
+        status: 'rejected',
+      };
+    },
   },
 });
 

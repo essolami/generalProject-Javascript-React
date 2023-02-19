@@ -89,3 +89,13 @@ mutable == متقلب
 - Some of the benefits od redux tooltip is simlify
   -- the configuration of implementation redux store and reducers by add some feature to redux.
   -- we have configureStore() and createReducer which leave the concept of rewriting of action type to function as well as the simplification of the immutable updates with normal mutative.
+
+[What is Redux Saga]()
+
+Redux Saga and Redux Thunk are both middleware libraries for Redux that allow developers to handle side effects such as async actions in Redux. However, they use different approaches to achieve this goal.
+
+Redux Thunk allows actions to return functions, which can then be used to dispatch further actions or perform async operations before dispatching actions. This approach is simple and easy to understand, but it can become difficult to manage and test as the codebase grows larger.
+
+Redux Saga, on the other hand, uses generator functions to manage async operations. This allows for more complex async operations to be handled in a more organized and testable way. With Redux Saga, developers can use sagas to coordinate multiple async operations and handle errors in a more granular way. The yield keyword is used to pause and resume the execution of sagas, allowing for more fine-grained control of async flow.
+
+In summary, Redux Thunk is simpler and more straightforward, while Redux Saga provides more advanced capabilities for managing complex async operations. Which library to use depends on the complexity of the async operations needed in the application and the preferences of the developer.

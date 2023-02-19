@@ -147,6 +147,24 @@ console.log(window.letVariable); // Output: undefined Because they are only acce
 
 ---
 
+[ ⚡️ What is The function generator ]()
+
+## A generator function is a special type of function that allows you to pause and resume its execution, and yield values to its caller.
+
+function* numberSequence() {
+let i = 1;
+while (true) {
+yield i++;
+}
+}
+
+const iterator = numberSequence();
+console.log(iterator.next().value); // 1
+console.log(iterator.next().value); // 2
+console.log(iterator.next().value); // 3
+
+---
+
 [ ⚡️ ES6 Version ]()
 
 ## ES6 is a version of JavaScript that introduced many new features and syntax improvements that make it easier to write and maintain code. Some of the most notable features of ES6 include:

@@ -1,12 +1,12 @@
-import React from 'react';
-import { Fragment, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React from "react";
+import { Fragment, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 
-import Cart from './components/Cart/Cart';
-import Layout from './components/Layout/Layout';
-import Products from './components/Shop/Products';
-import Notification from './components/UI/Notification';
-import { addItemToCart, fetchCartData } from './store/cart-actions';
+import Cart from "./components/Cart/Cart";
+import Layout from "./components/Layout/Layout";
+import Products from "./components/Shop/Products";
+import Notification from "./components/UI/Notification";
+import { addItemToCart, fetchCartData } from "./store/cart-actions";
 
 let isInitial = true;
 
@@ -27,6 +27,7 @@ function ReduxDemo() {
     }
 
     if (cart.changed) {
+      // console.log(cart);
       dispatch(addItemToCart(cart));
     }
   }, [cart, dispatch]);

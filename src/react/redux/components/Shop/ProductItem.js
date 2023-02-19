@@ -1,9 +1,9 @@
-import React from 'react';
-import { useDispatch } from 'react-redux';
+import React from "react";
+import { useDispatch } from "react-redux";
 
-import { addItemToCart } from '../../store/cart-actions';
-import Card from '../UI/Card';
-import classes from './ProductItem.module.css';
+import { addItemToCart } from "../../store/cart-actions";
+import Card from "../UI/Card";
+import classes from "./ProductItem.module.css";
 
 const ProductItem = (props) => {
   const dispatch = useDispatch();
@@ -11,6 +11,11 @@ const ProductItem = (props) => {
   const { title, price, description, id } = props;
 
   const addToCartHandler = () => {
+    console.log({
+      id,
+      title,
+      price,
+    });
     // and then send Http request
     // fetch('firebase-url', { method: 'POST', body: JSON.stringify(newCart) })
     dispatch(

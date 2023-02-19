@@ -1,9 +1,9 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { fetchCartData, addItemToCart } from './cart-actions';
+import { createSlice } from "@reduxjs/toolkit";
+import { fetchCartData, addItemToCart } from "./cart-actions";
 const cartSlice = createSlice({
-  name: 'cart',
+  name: "cart",
   initialState: {
-    status: 'idle',
+    status: "idle",
     isLoading: false,
     items: [],
     totalQuantity: 0,
@@ -46,7 +46,7 @@ const cartSlice = createSlice({
       return {
         ...state,
         isLoading: true,
-        status: 'pending',
+        status: "pending",
       };
     },
     [fetchCartData.fulfilled]: (state, action) => {
@@ -56,46 +56,47 @@ const cartSlice = createSlice({
         isLoading: false,
         items,
         totalQuantity,
-        status: 'success',
+        status: "success",
       };
     },
-    // [fetchCartData.rejected]: (state, action) => {
-    //   return {
-    //     ...state,
-    //     isLoading: false,
-    //     status: 'rejected',
-    //   };
-    // },
+    [fetchCartData.rejected]: (state, action) => {
+      return {
+        ...state,
+        isLoading: false,
+        status: "rejected",
+      };
+    },
     // [addItemToCart.pending]: (state) => {
     //   return {
     //     ...state,
     //     isLoading: true,
-    //     status: 'SEND_CART_DATA_PENDING',
+    //     status: "SEND_CART_DATA_PENDING",
     //   };
     // },
     // [addItemToCart.fulfilled]: (state, action) => {
     //   const newItem = action.payload;
+    //   console.log(newItem);
     //   const existingItem = state.items.find((item) => item.id === newItem.id);
     //   state.totalQuantity++;
-    //   state.changed = true;
-    //   if (!existingItem) {
-    //     state.items.push({
-    //       id: newItem.id,
-    //       price: newItem.price,
-    //       quantity: 1,
-    //       totalPrice: newItem.price,
-    //       name: newItem.title,
-    //     });
-    //   } else {
-    //     existingItem.quantity++;
-    //     existingItem.totalPrice = existingItem.totalPrice + newItem.price;
-    //   }
+    //   // state.changed = true;
+    //   // if (!existingItem) {
+    //   //   state.items.push({
+    //   //     id: newItem.id,
+    //   //     price: newItem.price,
+    //   //     quantity: 1,
+    //   //     totalPrice: newItem.price,
+    //   //     name: newItem.title,
+    //   //   });
+    //   // } else {
+    //   //   existingItem.quantity++;
+    //   //   existingItem.totalPrice = existingItem.totalPrice + newItem.price;
+    //   // }
     // },
     // [addItemToCart.rejected]: (state, action) => {
     //   return {
     //     ...state,
     //     isLoading: false,
-    //     status: 'rejected',
+    //     status: "rejected",
     //   };
     // },
   },

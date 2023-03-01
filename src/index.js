@@ -5,12 +5,15 @@ import App from './App';
 import store from './react/redux/store';
 // import storePosts from './react/redux/redux-toolkit/store.js';
 import './index.css';
+import { BrowserRouter, Route, Outlet, Link } from 'react-router-dom';
 
 const root = createRoot(document.getElementById('root'));
 
 root.render(
   <Provider store={store}>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </Provider>
 );
 

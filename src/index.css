@@ -13,6 +13,9 @@ body {
   background-color: #3f3f3f;
   /* margin: 0 15%; */
 }
+a {
+  color: white;
+}
 
 button {
   font: inherit;

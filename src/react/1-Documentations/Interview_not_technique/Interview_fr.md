@@ -38,4 +38,12 @@ En conséquence, l'entreprise a enregistré une augmentation significative du ta
 
 [ Parlez-moi de vos compétences techniques. ? ]()
 
+En tant que développeur Front-End, j'ai développé des compétences techniques solides en HTML, CSS, JavaScript et React JS.
+
+J'ai une expérience pratique dans l'utilisation de HTML et CSS pour créer des mises en page complexes et responsives, tout en assurant une expérience utilisateur agréable et intuitive.
+
+En outre, je suis très à l'aise avec les frameworks JavaScript tels que React JS. J'ai une bonne compréhension des concepts de React, tels que le Redux pour gerer les stores, je suis capable de les appliquer efficacement pour créer des applications performantes et évolutives. ainsi que j'ai deja travailler des petits projects avec angular ! mais pour le moment je suis trés a l"aise avec React Js
+
+Enfin, je suis également capable de travailler avec des outils de développement tels que Git, npm, webpack et Babel pour assurer une gestion efficace du code source et des workflows de développement. J'aime rester à jour avec les dernières technologies et tendances du web, ce qui me permet de continuer à développer mes compétences techniques en permanence.
+
 ---

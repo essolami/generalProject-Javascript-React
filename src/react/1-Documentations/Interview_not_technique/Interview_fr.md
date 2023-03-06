@@ -53,3 +53,7 @@ Enfin, je suis également capable de travailler avec des outils de développemen
 Je suis disposé à discuter de mes attentes salariales, en tenant compte de ma rémunération précédente, de mes connaissances et de mon expérience dans l'industrie. Sur cette base, je considère qu'un salaire compris entre 30 000 et 40 000 euros bruts annuels serait raisonnable pour un poste de Front End React JS Junior en France. Toutefois, je suis également ouvert à la négociation pour d'autres formes de rémunération disponibles.
 
 ---
+
+[ quand vous pouvez commencer ? ]()
+
+Je suis enthousiaste à l'idée de rejoindre votre équipe. Toutefois, avant de pouvoir effectuer la transition, je dois terminer plusieurs projets en cours dans mon poste actuel chez Berexia. J'ai l'intention de donner un préavis de deux mois à mes collègues pour faciliter une transition en douceur, et après cela, je serai ravi de rejoindre votre équipe.

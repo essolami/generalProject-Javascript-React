@@ -47,3 +47,9 @@ En outre, je suis très à l'aise avec les frameworks JavaScript tels que React 
 Enfin, je suis également capable de travailler avec des outils de développement tels que Git, npm, webpack et Babel pour assurer une gestion efficace du code source et des workflows de développement. J'aime rester à jour avec les dernières technologies et tendances du web, ce qui me permet de continuer à développer mes compétences techniques en permanence.
 
 ---
+
+[ Parlez-moi de vos compétences techniques. ? ]()
+
+Je suis disposé à discuter de mes attentes salariales, en tenant compte de ma rémunération précédente, de mes connaissances et de mon expérience dans l'industrie. Sur cette base, je considère qu'un salaire compris entre 30 000 et 40 000 euros bruts annuels serait raisonnable pour un poste de Front End React JS Junior en France. Toutefois, je suis également ouvert à la négociation pour d'autres formes de rémunération disponibles.
+
+---

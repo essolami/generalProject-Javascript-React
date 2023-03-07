@@ -26,13 +26,11 @@ Je suis toujours à la recherche de nouveaux défis et de possibilités de crois
 
 [ Quelle est votre plus grande réussite professionnelle ? ]()
 
-je peux vous donner un exemple de réussite professionnelle différent de mon expérience avec Bam Music.
+Lors de mon précédent travail, j'ai participé à un projet pour une entreprise de vente en ligne. Mon objectif était d'améliorer la rapidité du site web et l'expérience utilisateur.
 
-Lors de ma précédente expérience professionnelle, j'ai travaillé sur un projet pour une entreprise de commerce électronique visant à améliorer l'expérience utilisateur sur leur site web. Mon travail consistait à améliorer la rapidité du chargement de la page, ainsi qu'à optimiser les fonctionnalités pour offrir une expérience plus fluide et plus agréable aux utilisateurs.
+Avec l'aide d'une équipe de développeurs, j'ai pu mettre en place les changements nécessaires pour atteindre cet objectif. Les résultats ont été remarquables, avec une augmentation du taux de conversion et une diminution du taux de rebond.
 
-Après avoir identifié les points à améliorer, j'ai collaboré avec une équipe de développeurs pour mettre en œuvre les changements nécessaires, tout en respectant les délais et le budget fixés. Le résultat a été remarquable : la rapidité de chargement des pages a été considérablement améliorée, et les utilisateurs ont pu naviguer plus facilement sur le site.
-
-En conséquence, l'entreprise a enregistré une augmentation significative du taux de conversion, ainsi qu'une réduction du taux de rebond. Cette réussite professionnelle m'a permis d'acquérir de nouvelles compétences en matière d'optimisation de la performance et de gestion de projet, et elle a été très satisfaisante pour moi en tant que professionnel de l'informatique.
+Cette expérience m'a permis de développer mes compétences en gestion de projet et en optimisation de la performance. C'était une grande réussite pour moi en tant que professionnel de l'informatique.
 
 ---
 
@@ -57,3 +55,21 @@ Je suis disposé à discuter de mes attentes salariales, en tenant compte de ma 
 [ quand vous pouvez commencer ? ]()
 
 Je suis enthousiaste à l'idée de rejoindre votre équipe. Toutefois, avant de pouvoir effectuer la transition, je dois terminer plusieurs projets en cours dans mon poste actuel chez Berexia. J'ai l'intention de donner un préavis de deux mois à mes collègues pour faciliter une transition en douceur, et après cela, je serai ravi de rejoindre votre équipe.
+
+---
+
+[ Qu'est-ce qui vous a motivé à devenir développeur frontend ? ]()
+
+Je suis passionné par la création de beaux produits qui offrent une excellente expérience utilisateur. En tant que développeur frontend, j'ai la possibilité de donner vie à des designs et de créer des interfaces utilisateur interactives qui améliorent la façon dont les gens interagissent avec les technologies. Cela me donne un sentiment de satisfaction et d'accomplissement professionnels.
+
+---
+
+[ Comment décririez-vous votre style de communication avec les membres de l'équipe ? ]()
+
+Pour gérer la communication au sein de l'équipe, je m'assure de mettre en place une communication claire et transparente en utilisant des outils tels que des réunions régulières par organiser chaque matinée un meeting pour voir l'avencement de chaqu'un des membres, ainsi que l'utilisation des methode agile et de respecter les delais des sprint et de releases par l'utulitation des outils comme Jira ou trello.
+
+On travaille avec github pour structurer notre code ! chaque membre de l'equipe y'a sa propre branche dans son local ! et dans le meeting on fait le merge sur un branche de developement qui est general et qui est deployé dans le serveur.
+
+Je suis également disponible pour mes collègues de travail, prêt à répondre à leurs questions et à résoudre les problèmes de manière collaborative. Si on a des conflits je m'efforce de les résoudre rapidement et efficacement en communiquant clairement et en cherchant des solutions qui conviennent à tous les membres de l'équipe.
+
+---
